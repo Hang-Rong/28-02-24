@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bai 9</title>
+</head>
+<body>
+    <script>
+        const a = 0;
+        const b = 50;
+        
+
+        if (!isNaN(a) && !isNaN(b) && a < b) {
+         
+          for (let c = a; c <= b; c++) {
+             if (c%5 == 0){
+                document.write (c+ '<br/>');
+            }
+        };
+        
+        
+    } else {
+            alert('Vui lòng nhập hai số hợp lệ và đảm bảo rằng a nhỏ hơn b.');
+        }
+    </script>
+</body>
+</html>

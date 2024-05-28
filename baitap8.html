@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bai 8 </title>
+</head>
+<body>
+    <script>
+        const a = +prompt('Nhâp số a');
+        const b = +prompt('Nhập số b');
+        let dem = 0;
+
+        if (!isNaN(a) && !isNaN(b) && a < b) {
+           let d=0;
+        for (let c = a; c < b; c++) {
+            if (c%5 == 2){
+              d= c + d; 
+              dem++;
+            }
+        };
+        document.write ('Tổng các số chia 5 dư 2 từ a đến b là :' + d + '<br/>');
+        document.write ('Đếm:' + dem );
+    } else {
+            alert('Vui lòng nhập hai số hợp lệ và đảm bảo rằng a nhỏ hơn b.');
+        }
+    </script>
+</body>
+</html>

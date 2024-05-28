@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Bảng Cửu Chương 5</h2>
+    <div id="bangcuuchuong"></div>
+
+    <script>
+       
+        const bang = document.getElementById('bangcuuchuong');
+        const sohang = 5; // Số hạng
+        let i = 1; //Thừa số
+
+        do {
+            const tich = number * i;
+            const pheptinh = document.createElement('p');
+            pheptinh.innerText = `${sohang} x ${i} = ${tich}`;
+            bang.appendChild(paragraph);
+            i++;
+        } while (i <= 10);
+
+         /*
+        const bang = document.getElementById('bangcuuchuong');
+        const sohang = 5;
+
+        for (let i = 1; i <= 10; i++) {
+            const result = sohang * i;
+            const paragraph = document.createElement('p');
+            paragraph.innerText = `${number} x ${i} = ${result}`;
+            bang.appendChild(paragraph);
+        }
+        */
+        
+        /*
+         for(let i= 2;i<=10;i++){
+            console.log("");
+            for(j=1;j<=10;j++){
+                console.log(i+"x"+j+"="+(i*j))
+            }
+        }
+        */
+        </script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bai 5</title>
+</head>
+
+<body>
+    <div id="gtri">
+        <h1></h1>
+    </div>
+    <script>
+        let a = +prompt('Nhâp số a');
+        let b = +prompt('Nhập số b');
+
+        if (!isNaN(a) && !isNaN(b) && a < b) {
+            const gtriDiv = document.getElementById('gtri');
+        for (let c = a; c < b; c++) {
+            let h1 = document.createElement('h1'); 
+            h1.innerText = c; 
+            gtriDiv.appendChild(h1); 
+        };
+    } else {
+            alert('Vui lòng nhập hai số hợp lệ và đảm bảo rằng a nhỏ hơn b.');
+        }
+    </script>
+</body>
+
+</html>

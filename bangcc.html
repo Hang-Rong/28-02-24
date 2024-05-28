@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Cửu Chương</title>
+    <style>
+        .multiplication-table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .table {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="multiplication-table" id="multiplication-table">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('multiplication-table');
+
+            for (let i = 1; i <= 10; i++) {
+                let table = document.createElement('div');
+                table.className = 'table';
+
+                for (let j = 1; j <= 10; j++) {
+                    let result = i * j;
+                    let item = document.createElement('p');
+                    item.textContent = `${i} x ${j} = ${result}`;
+                    table.appendChild(item);
+                }
+
+                container.appendChild(table);
+            }
+        });
+    </script>
+</body>
+</html>

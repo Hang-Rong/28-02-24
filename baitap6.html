@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Bai 6 </title>
+        <style>
+            h1 {
+                color: brown;
+            }
+            h2 {
+                color:aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="gtri">
+            <h1></h1>
+            <h2></h2>
+        </div>
+        <script>
+             let a = +prompt('Nhâp số a');
+             let b = +prompt('Nhập số b');
+
+        if (!isNaN(a) && !isNaN(b) && a < b) {
+            const gtriDiv = document.getElementById('gtri');
+        for (let c = a; c < b; c++) {
+            if ( c%2 ==0 ){
+            let h2 = document.createElement('h2'); 
+            h2.innerText = c; 
+            gtriDiv.appendChild(h2); 
+            } else {
+                let h1 = document.createElement('h1'); 
+                h1.innerText = c; 
+                gtriDiv.appendChild(h1); 
+            }
+        };
+    } else {
+            alert('Vui lòng nhập hai số hợp lệ và đảm bảo rằng a nhỏ hơn b.');
+        }
+        </script>
+    </body>
+</html>
